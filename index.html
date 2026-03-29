@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaijam — Welcome to the Show</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Mobile Header -->
+  <header class="mobile-header" id="mobileHeader">
+    <span class="logo">JAIJAM</span>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-content">
+      <div class="menu-top">
+        <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="menu-nav">
+        <a href="#program" class="menu-link" data-scroll>Program List</a>
+        <a href="#about" class="menu-link" data-scroll>About Us</a>
+        <a href="#gratitude" class="menu-link" data-scroll>Note of Gratitude</a>
+      </nav>
+      <div class="menu-actions">
+        <div class="menu-btn-recording">
+          <span class="menu-btn-recording-title">RECORDING OF THE SHOW</span>
+          <span class="menu-btn-recording-sub">Coming soon</span>
+        </div>
+        <a href="https://account.venmo.com/u/jjwannapat" target="_blank" rel="noopener" class="menu-btn-support">Support Chan</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tablet/Desktop Hamburger -->
+  <button class="floating-hamburger" id="floatingHamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+
+    <!-- Mobile Hero (<769px) -->
+    <div class="hero-mobile">
+      <img src="images/banner-mobile-new.jpg" alt="Chan Wannapat" class="hero-mobile-bg">
+      <div class="hero-mobile-top">
+        <div class="hero-mobile-title-wrap">
+          <img src="images/hero-title-desktop.png" alt="Welcome to the Show!" class="hero-mobile-title-img">
+        </div>
+      </div>
+      <div class="hero-mobile-bottom">
+        <p>I would like to dedicate this show to all of us: Brave travelers who&rsquo;re navigating this weird, wild thing called life.</p>
+        <p>&nbsp;</p>
+        <p>Thank you so much for being here.</p>
+        <p class="hero-sig">&mdash; With love, Chan Wannapat</p>
+      </div>
+    </div>
+
+    <!-- Tablet Hero (769–1279px) -->
+    <div class="hero-tablet">
+      <div class="hero-tablet-inner">
+        <div class="hero-tablet-content">
+          <div class="hero-tablet-title-wrap">
+            <div class="hero-title-inner">
+              <img src="images/hero-title-desktop.png" alt="Welcome to the Show!" class="hero-title-img">
+            </div>
+          </div>
+          <div class="hero-tablet-subtitle-row">
+            <div class="hero-tablet-subtitle">
+              <p>I would like to dedicate this show to all of us: Brave travelers who&rsquo;re navigating this weird, wild thing called life.</p>
+              <p>&nbsp;</p>
+              <p>Thank you so much for being here.</p>
+              <p class="hero-sig">&mdash; With love, Chan Wannapat</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-tablet-girl-wrap">
+          <img src="images/hero-girl-desktop.png" alt="Chan Wannapat" class="hero-tablet-girl-img">
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Hero (≥1280px) -->
+    <div class="hero-desktop">
+      <div class="hero-desktop-inner">
+        <div class="hero-desktop-girl">
+          <img src="images/hero-girl-desktop.png" alt="Chan Wannapat" class="hero-desktop-girl-img">
+        </div>
+        <div class="hero-desktop-content">
+          <div class="hero-desktop-title-wrap">
+            <div class="hero-title-inner">
+              <img src="images/hero-title-desktop.png" alt="Welcome to the Show!" class="hero-title-img">
+            </div>
+          </div>
+          <div class="hero-desktop-subtitle-row">
+            <div class="hero-desktop-subtitle">
+              <p>I would like to dedicate this show to all of us: Brave travelers who&rsquo;re navigating this weird, wild thing called life.</p>
+              <p>&nbsp;</p>
+              <p>Thank you so much for being here.</p>
+              <p class="hero-sig">&mdash; With love, Chan Wannapat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== PROGRAM LIST ===== -->
+  <section class="program" id="program">
+    <div class="program-inner">
+      <div class="program-header">
+        <p class="section-title">Program list</p>
+      </div>
+      <div class="program-columns">
+        <div class="program-col">
+          <div class="program-item animate-in">
+            <span class="program-num">1.</span>
+            <div class="program-info">
+              <span class="program-song">Times are hard for dreamers</span>
+              <span class="program-artist">Daniel Mess&eacute; &middot; Am&eacute;lia</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="50">
+            <span class="program-num">2.</span>
+            <div class="program-info">
+              <span class="program-song">Let Me Be Your Star</span>
+              <span class="program-artist">Marc Shaiman &amp; Scott Wittman &middot; SMASH!</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="100">
+            <span class="program-num">3.</span>
+            <div class="program-info">
+              <span class="program-song">Something in the water</span>
+              <span class="program-artist">Clyde &amp; Gracie Lawrence &middot; Lawrence the Band</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="150">
+            <span class="program-num">4.</span>
+            <div class="program-info">
+              <span class="program-song">All of You</span>
+              <span class="program-artist">Lin-Manuel Miranda &middot; Encanto</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="200">
+            <span class="program-num">5.</span>
+            <div class="program-info">
+              <span class="program-song">Waiting on a wish</span>
+              <span class="program-artist">Benj Pasek &amp; Justin Paul &middot; Snow White (Film)</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="250">
+            <span class="program-num">6.</span>
+            <div class="program-info">
+              <span class="program-song">30/90</span>
+              <span class="program-artist">Jonathan Larson &middot; Tick Tick Boom!</span>
+            </div>
+          </div>
+        </div>
+        <div class="program-col">
+          <div class="program-item animate-in" data-delay="50">
+            <span class="program-num">7.</span>
+            <div class="program-info">
+              <span class="program-song">Roadless traveled</span>
+              <span class="program-artist">Fatai Veamatahau &middot; Fatai</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="100">
+            <span class="program-num">8.</span>
+            <div class="program-info">
+              <span class="program-song">Corner of The Sky</span>
+              <span class="program-artist">Stephen Schwartz &middot; Pippin</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="150">
+            <span class="program-num">9.</span>
+            <div class="program-info">
+              <span class="program-song">My Days</span>
+              <span class="program-artist">Ingrid Michaelson &middot; The Notebook</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="200">
+            <span class="program-num">10.</span>
+            <div class="program-info">
+              <span class="program-song">Masterpiece</span>
+              <span class="program-artist">Josh Alexander, Britt Burton &amp; Emily Warren &middot; Jessi J</span>
+            </div>
+          </div>
+          <div class="program-item animate-in" data-delay="250">
+            <span class="program-num">11.</span>
+            <div class="program-info">
+              <span class="program-song">Blackbird</span>
+              <span class="program-artist">Paul McCartney &amp; John Lennon &middot; The Beatles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT US ===== -->
+  <section class="about" id="about">
+    <p class="about-title animate-in">About us</p>
+    <div class="about-cards">
+
+      <div class="about-card animate-in">
+        <div class="about-card-img">
+          <img src="images/about-chan.jpg" alt="Chan Wannapat">
+        </div>
+        <div class="about-card-body">
+          <div class="about-card-text">
+            <h3 class="about-card-name">Chan Wannapat</h3>
+            <p class="about-card-desc">A Thai singer, performer, and vocal coach based in New York City, Chan holds a Fulbright-sponsored MM in Musical Theatre Vocal Performance and is the voice of Mirabel in Disney&rsquo;s Encanto Thailand.</p>
+          </div>
+          <div class="about-card-actions">
+            <button class="btn-read-more" data-person="chan">Read more</button>
+            <a href="https://www.instagram.com/chan_wannapat" target="_blank" rel="noopener" class="btn-instagram">See on Instagram <span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card animate-in" data-delay="100">
+        <div class="about-card-img">
+          <img src="images/about-angela.jpg" alt="Angela Dixon">
+        </div>
+        <div class="about-card-body">
+          <div class="about-card-text">
+            <h3 class="about-card-name">Angela Dixon</h3>
+            <p class="about-card-desc">A multi-instrumentalist, singer, and theater artist based in NYC, Angela brings percussion to the stage tonight alongside credits ranging from the National Archives to teaching music in the Bronx.</p>
+          </div>
+          <div class="about-card-actions">
+            <button class="btn-read-more" data-person="angela">Read more</button>
+            <a href="https://www.instagram.com/angeladixonmusic" target="_blank" rel="noopener" class="btn-instagram">See on Instagram <span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card animate-in" data-delay="200">
+        <div class="about-card-img">
+          <img src="images/about-eli.jpg" alt="Eli Weary">
+        </div>
+        <div class="about-card-body">
+          <div class="about-card-text">
+            <h3 class="about-card-name">Eli Weary</h3>
+            <p class="about-card-desc">An actor and instrumentalist based in NYC, Eli brings remarkable versatility to his craft as a cellist, guitarist, bassist, and conductor across regional theatre productions.</p>
+          </div>
+          <div class="about-card-actions">
+            <button class="btn-read-more" data-person="eli">Read more</button>
+            <a href="https://www.instagram.com/ez_weary/" target="_blank" rel="noopener" class="btn-instagram">See on Instagram <span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ===== TTF FOUNDATION SECTION ===== -->
+  <section class="ttf-section">
+    <div class="ttf-main">
+      <div class="ttf-header">
+        <div class="ttf-header-text">
+          <p class="ttf-presented-by">Presented by</p>
+          <p class="ttf-title">Thai Theatre Foundation</p>
+        </div>
+        <div class="ttf-logo-wrap">
+          <img src="images/ttf-logo.png" alt="Thai Theatre Foundation" class="ttf-logo">
+        </div>
+      </div>
+      <div class="ttf-note">
+        <p>Foundation exists to support and strengthen contemporary Thai theater and theater makers and to foster collaboration between Thai and US theater artists. We welcome artists and audiences across lines of identity, background, and experience. We believe cultural representation must come with fair access to space, support, and compensation. We uplift Thai and Thai-American theater makers not only through visibility but also through care, resources, and collaboration. We tell Thai and Thai-American stories not just to be heard but to open space, build relationships, and honor the people behind the work.</p>
+        <p>&nbsp;</p>
+        <p>For more information, visit <a href="http://www.thaitheatre.org" target="_blank" rel="noopener">www.thaitheatre.org</a></p>
+      </div>
+    </div>
+    <div class="ttf-staff-wrap">
+      <div class="ttf-staff-inner">
+        <p class="ttf-staff-title">Thai Theatre Foundation US Staff</p>
+        <div class="ttf-staff-list">
+          <div class="ttf-staff-item">
+            <span class="ttf-staff-role">Executive Director</span>
+            <span class="ttf-staff-name">Keng S. Meateanuwat</span>
+          </div>
+          <div class="ttf-staff-item">
+            <span class="ttf-staff-role">Line Producer</span>
+            <span class="ttf-staff-name">Zen Tunsaringkran</span>
+          </div>
+          <div class="ttf-staff-item">
+            <span class="ttf-staff-role">Development Team</span>
+            <span class="ttf-staff-name">Panita Charoenphinyochai</span>
+          </div>
+          <div class="ttf-staff-item">
+            <span class="ttf-staff-role">Marketing and Communication team</span>
+            <span class="ttf-staff-name">Jaijam Wannapat &amp; Pattida Panyakaew</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ttf-sponsors">
+      <p class="ttf-sponsors-label">Supported by</p>
+      <div class="ttf-sponsors-row">
+        <div class="ttf-sponsors-track">
+          <div class="sponsor-cell"><img src="logos/Logo-01.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-02.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-03.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-04.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-05.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-06.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-07.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-08.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-01.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-02.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-03.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-04.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-05.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-06.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-07.png" alt="Sponsor"></div>
+          <div class="sponsor-cell"><img src="logos/Logo-08.png" alt="Sponsor"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOTE OF GRATITUDE ===== -->
+  <section class="gratitude" id="gratitude">
+    <div class="gratitude-inner">
+      <div class="gratitude-note">
+        <h2 class="gratitude-title animate-in">Note of Gratitude</h2>
+        <div class="gratitude-text animate-in" data-delay="100">
+          <p>I would like to give a big thank you to the Thai Theatre Foundation for all your support&mdash;you&rsquo;re truly uplifting the Thai artist community in such a powerful way, both collectively and individually. Patti, my producer, I couldn&rsquo;t do this without you.</p>
+          <p>&nbsp;</p>
+          <p>Thank you for holding this whole thing together. Eli and Angela&mdash;thank you for sharing your love of music and your incredible talent with this show.</p>
+          <p>&nbsp;</p>
+          <p>You both are such a beautiful human being, inside and out, and I&rsquo;m so lucky to have you helping me bring this to life. Thank you Keng, Karel, Proud, Kimberly, Pam, Ezra, Warut, Plum, Sivan, mom, my family, and all my people&mdash;thank you for always being there for me, and pushing me to my best. I&rsquo;m so lucky to be surrounded by such love. And thank you to everyone who&rsquo;s here. I&rsquo;m truly grateful for your support and love.</p>
+        </div>
+      </div>
+      <div class="donation-box animate-in" data-delay="200">
+        <div class="donation-text">
+          <p>As I continue on my journey, I&rsquo;d also deeply appreciate any donations. It all goes toward fueling my art, my dreams, and yes&mdash;very real things like immigration fees. Every bit of support helps me keep going. Thank you for being part of this journey.&rdquo;</p>
+          <p>&nbsp;</p>
+          <p>&mdash; With love, Chan Wannapat</p>
+        </div>
+        <a href="https://account.venmo.com/u/jjwannapat" target="_blank" rel="noopener" class="btn-support">Support Me</a>
+      </div>
+    </div>
+    <p class="footer-credit">Designed by: Karel Fyrbach</p>
+  </section>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="modal">
+    <div class="modal-inner">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="modal-body">
+        <div class="modal-img">
+          <img src="" alt="" id="modalImg">
+        </div>
+        <div class="modal-content">
+          <div class="modal-content-top">
+            <h3 class="modal-name" id="modalName"></h3>
+            <p class="modal-bio" id="modalBio"></p>
+          </div>
+          <div class="modal-action">
+            <a href="" target="_blank" rel="noopener" class="btn-instagram modal-ig" id="modalActionBtn">
+              See on Instagram <span class="btn-arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
