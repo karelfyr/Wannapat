@@ -132,7 +132,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 .menu-nav {
   display: flex; flex-direction: column;
   gap: 12px;
-  padding: 0 16px;
+  padding: 20px 16px;
 }
 .menu-link {
   font-family: 'Barlow Condensed', sans-serif;
@@ -192,7 +192,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   font-size: 27px;
   letter-spacing: 0.27px;
   text-transform: uppercase;
-  height: 75px;
+  height: 97px;
 }
 .menu-btn-support {
   display: flex;
@@ -1016,13 +1016,13 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   flex-shrink: 0;
 }
 .footer-credit {
-  font-family: 'Barlow', sans-serif;
-  font-weight: 500;
-  font-size: 13px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
   color: #fff;
   opacity: 0.44;
   text-transform: uppercase;
-  letter-spacing: 0.13px;
+  letter-spacing: 0.27px;
   text-align: center;
   line-height: 1.4;
 }
@@ -1265,6 +1265,33 @@ a.logo {
   height: 80px;
   width: auto;
   object-fit: contain;
+}
+
+@media (max-width: 439px) {
+  .thai-modal-content {
+    padding: 60px 40px 24px;
+    gap: 24px;
+  }
+  .thai-modal-sub {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-top: -12px;
+  }
+  .thai-modal-qr {
+    width: 210px;
+    height: 210px;
+  }
+  .thai-modal-bank {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .thai-modal-footer {
+    height: 108px;
+    padding: 12px 25px;
+  }
+  .thai-modal-scb {
+    height: 84px;
+  }
 }
 
 @media (min-width: 440px) {
