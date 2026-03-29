@@ -112,11 +112,14 @@ document.addEventListener('keydown', (e) => {
 
 // ===== Thai Support Modal =====
 function openThaiModal() {
-  closeMenu();
+  // Add modal-open BEFORE removing menu-open so scroll lock never drops
+  // (Safari repositions fixed elements the moment overflow:hidden is removed)
+  document.body.classList.add('modal-open');
+  menuOverlay.classList.remove('open');
+  document.body.classList.remove('menu-open');
   setTimeout(() => {
     thaiModal.classList.add('active');
     thaiModalBackdrop.classList.add('active');
-    document.body.classList.add('modal-open');
   }, 350);
 }
 function closeThaiModal() {
