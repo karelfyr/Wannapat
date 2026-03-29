@@ -36,6 +36,10 @@ const modalName = document.getElementById('modalName');
 const modalBio = document.getElementById('modalBio');
 const modalActionBtn = document.getElementById('modalActionBtn');
 const readMoreBtns = document.querySelectorAll('.btn-read-more[data-person]');
+const thaiBtnMenu = document.getElementById('thaiBtnMenu');
+const thaiModal = document.getElementById('thaiModal');
+const thaiModalBackdrop = document.getElementById('thaiModalBackdrop');
+const thaiModalCloseBtn = document.getElementById('thaiModalCloseBtn');
 
 // ===== Menu =====
 function openMenu() {
@@ -101,9 +105,38 @@ modalBackdrop.addEventListener('click', closeModal);
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     if (modal.classList.contains('active')) closeModal();
+    if (thaiModal.classList.contains('active')) closeThaiModal();
     if (menuOverlay.classList.contains('open')) closeMenu();
   }
 });
+
+// ===== Thai Support Modal =====
+function openThaiModal() {
+  closeMenu();
+  setTimeout(() => {
+    thaiModal.classList.add('active');
+    thaiModalBackdrop.classList.add('active');
+    document.body.classList.add('modal-open');
+  }, 350);
+}
+function closeThaiModal() {
+  thaiModal.classList.remove('active');
+  thaiModalBackdrop.classList.remove('active');
+  document.body.classList.remove('modal-open');
+}
+
+thaiBtnMenu.addEventListener('click', openThaiModal);
+thaiModalCloseBtn.addEventListener('click', closeThaiModal);
+thaiModalBackdrop.addEventListener('click', closeThaiModal);
+
+// ===== Logo → scroll to top =====
+const logoHomeBtn = document.getElementById('logoHomeBtn');
+if (logoHomeBtn) {
+  logoHomeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
 // ===== Scroll Animations =====
 const observer = new IntersectionObserver((entries) => {

@@ -6,14 +6,14 @@
   <title>Jaijam — Welcome to the Show</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
   <!-- Mobile Header -->
   <header class="mobile-header" id="mobileHeader">
-    <span class="logo">JAIJAM</span>
+    <a href="#" class="logo" id="logoHomeBtn">JAIJAM</a>
     <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
@@ -31,11 +31,19 @@
         <a href="#gratitude" class="menu-link" data-scroll>Note of Gratitude</a>
       </nav>
       <div class="menu-actions">
-        <div class="menu-btn-recording">
+        <div class="menu-btn-recording menu-btn-recording--disabled">
           <span class="menu-btn-recording-title">RECORDING OF THE SHOW</span>
           <span class="menu-btn-recording-sub">Coming soon</span>
         </div>
-        <a href="https://account.venmo.com/u/jjwannapat" target="_blank" rel="noopener" class="menu-btn-support">Support Chan</a>
+        <a href="https://www.tickettailor.com/events/thaitheatrefoundation/2104182" target="_blank" rel="noopener" class="menu-btn-tickets">BUY OR MANAGE TICKETS</a>
+        <a href="https://account.venmo.com/u/jjwannapat" target="_blank" rel="noopener" class="menu-btn-support">
+          <span class="menu-btn-support-title">SUPPORT CHAN</span>
+          <span class="menu-btn-support-sub">WITH VENMO</span>
+        </a>
+        <button class="menu-btn-thai" id="thaiBtnMenu">
+          <span class="menu-btn-thai-title">สนับสนุนจันทร</span>
+          <span class="menu-btn-thai-sub">ธนาคาร SCB</span>
+        </button>
       </div>
     </div>
   </div>
@@ -122,42 +130,42 @@
       </div>
       <div class="program-columns">
         <div class="program-col">
-          <div class="program-item animate-in">
+          <div class="program-item animate-in" data-delay="0">
             <span class="program-num">1.</span>
             <div class="program-info">
               <span class="program-song">Times are hard for dreamers</span>
               <span class="program-artist">Daniel Mess&eacute; &middot; Am&eacute;lia</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="50">
+          <div class="program-item animate-in" data-delay="100">
             <span class="program-num">2.</span>
             <div class="program-info">
               <span class="program-song">Let Me Be Your Star</span>
               <span class="program-artist">Marc Shaiman &amp; Scott Wittman &middot; SMASH!</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="100">
+          <div class="program-item animate-in" data-delay="200">
             <span class="program-num">3.</span>
             <div class="program-info">
               <span class="program-song">Something in the water</span>
               <span class="program-artist">Clyde &amp; Gracie Lawrence &middot; Lawrence the Band</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="150">
+          <div class="program-item animate-in" data-delay="300">
             <span class="program-num">4.</span>
             <div class="program-info">
               <span class="program-song">All of You</span>
               <span class="program-artist">Lin-Manuel Miranda &middot; Encanto</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="200">
+          <div class="program-item animate-in" data-delay="400">
             <span class="program-num">5.</span>
             <div class="program-info">
               <span class="program-song">Waiting on a wish</span>
               <span class="program-artist">Benj Pasek &amp; Justin Paul &middot; Snow White (Film)</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="250">
+          <div class="program-item animate-in" data-delay="500">
             <span class="program-num">6.</span>
             <div class="program-info">
               <span class="program-song">30/90</span>
@@ -173,28 +181,28 @@
               <span class="program-artist">Fatai Veamatahau &middot; Fatai</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="100">
+          <div class="program-item animate-in" data-delay="150">
             <span class="program-num">8.</span>
             <div class="program-info">
               <span class="program-song">Corner of The Sky</span>
               <span class="program-artist">Stephen Schwartz &middot; Pippin</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="150">
+          <div class="program-item animate-in" data-delay="250">
             <span class="program-num">9.</span>
             <div class="program-info">
               <span class="program-song">My Days</span>
               <span class="program-artist">Ingrid Michaelson &middot; The Notebook</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="200">
+          <div class="program-item animate-in" data-delay="350">
             <span class="program-num">10.</span>
             <div class="program-info">
               <span class="program-song">Masterpiece</span>
               <span class="program-artist">Josh Alexander, Britt Burton &amp; Emily Warren &middot; Jessi J</span>
             </div>
           </div>
-          <div class="program-item animate-in" data-delay="250">
+          <div class="program-item animate-in" data-delay="450">
             <span class="program-num">11.</span>
             <div class="program-info">
               <span class="program-song">Blackbird</span>
@@ -265,7 +273,7 @@
 
   <!-- ===== TTF FOUNDATION SECTION ===== -->
   <section class="ttf-section">
-    <div class="ttf-main">
+    <div class="ttf-main animate-in">
       <div class="ttf-header">
         <div class="ttf-header-text">
           <p class="ttf-presented-by">Presented by</p>
@@ -281,7 +289,7 @@
         <p>For more information, visit <a href="http://www.thaitheatre.org" target="_blank" rel="noopener">www.thaitheatre.org</a></p>
       </div>
     </div>
-    <div class="ttf-staff-wrap">
+    <div class="ttf-staff-wrap animate-in" data-delay="100">
       <div class="ttf-staff-inner">
         <p class="ttf-staff-title">Thai Theatre Foundation US Staff</p>
         <div class="ttf-staff-list">
@@ -290,21 +298,21 @@
             <span class="ttf-staff-name">Keng S. Meateanuwat</span>
           </div>
           <div class="ttf-staff-item">
-            <span class="ttf-staff-role">Line Producer</span>
-            <span class="ttf-staff-name">Zen Tunsaringkran</span>
+            <span class="ttf-staff-role">Project&rsquo;s Producer</span>
+            <span class="ttf-staff-name">Pattida Panyakaew</span>
           </div>
           <div class="ttf-staff-item">
             <span class="ttf-staff-role">Development Team</span>
-            <span class="ttf-staff-name">Panita Charoenphinyochai</span>
+            <span class="ttf-staff-name">Panita Charoenphinyochai &amp; Zen Tunsaingkarn</span>
           </div>
           <div class="ttf-staff-item">
-            <span class="ttf-staff-role">Marketing and Communication team</span>
+            <span class="ttf-staff-role">Marketing and Communication Team</span>
             <span class="ttf-staff-name">Jaijam Wannapat &amp; Pattida Panyakaew</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="ttf-sponsors">
+    <div class="ttf-sponsors animate-in" data-delay="200">
       <p class="ttf-sponsors-label">Supported by</p>
       <div class="ttf-sponsors-row">
         <div class="ttf-sponsors-track">
@@ -335,11 +343,11 @@
       <div class="gratitude-note">
         <h2 class="gratitude-title animate-in">Note of Gratitude</h2>
         <div class="gratitude-text animate-in" data-delay="100">
-          <p>I would like to give a big thank you to the Thai Theatre Foundation for all your support&mdash;you&rsquo;re truly uplifting the Thai artist community in such a powerful way, both collectively and individually. Patti, my producer, I couldn&rsquo;t do this without you.</p>
+          <p>I would like to give a big thank you to the Thai Theatre Foundation for all your support&mdash;you&rsquo;re truly uplifting the Thai artist community in such a powerful way. Pattida Panyakaew, my producer, thank you for holding this whole thing together. Eli Weary and Angela Dixon&mdash;thank you for sharing your love of music and your incredible talents with this show.</p>
           <p>&nbsp;</p>
-          <p>Thank you for holding this whole thing together. Eli and Angela&mdash;thank you for sharing your love of music and your incredible talent with this show.</p>
+          <p>Thank you P&rsquo;Keng, Karel, Proud, Kimberly, P&rsquo;Pam, P&rsquo;Ezra, P&rsquo;Warut, P&rsquo;Plum, Sivan, mom, my family, and my people&mdash;thank you for always being there for me, and pushing me to my best. I&rsquo;m so lucky to be surrounded by your love.</p>
           <p>&nbsp;</p>
-          <p>You both are such a beautiful human being, inside and out, and I&rsquo;m so lucky to have you helping me bring this to life. Thank you Keng, Karel, Proud, Kimberly, Pam, Ezra, Warut, Plum, Sivan, mom, my family, and all my people&mdash;thank you for always being there for me, and pushing me to my best. I&rsquo;m so lucky to be surrounded by such love. And thank you to everyone who&rsquo;s here. I&rsquo;m truly grateful for your support and love.</p>
+          <p>And lastly, thank you to you for being here. I&rsquo;m truly grateful for your support, kindness and love.</p>
         </div>
       </div>
       <div class="donation-box animate-in" data-delay="200">
@@ -351,7 +359,7 @@
         <a href="https://account.venmo.com/u/jjwannapat" target="_blank" rel="noopener" class="btn-support">Support Me</a>
       </div>
     </div>
-    <p class="footer-credit">Designed by: Karel Fyrbach</p>
+    <p class="footer-credit"><a href="https://www.linkedin.com/in/karelfyrbach/" target="_blank" rel="noopener">Website design by: Karel Fyrbach</a></p>
   </section>
 
   <!-- ===== MODAL ===== -->
@@ -373,6 +381,29 @@
               See on Instagram <span class="btn-arrow">&rarr;</span>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thai Support Popup -->
+  <div class="modal-backdrop" id="thaiModalBackdrop"></div>
+  <div class="modal thai-modal" id="thaiModal">
+    <div class="modal-inner thai-modal-inner">
+      <button class="modal-close" id="thaiModalCloseBtn">&times;</button>
+      <div class="thai-modal-body">
+        <div class="thai-modal-content">
+          <h3 class="thai-modal-title">ขอบคุณสำหรับ<br>การสนับสนุน</h3>
+          <p class="thai-modal-sub">สแกน QR Code จากแอปธนาคารของคุณ</p>
+          <img src="images/QRCode.png" alt="QR Code" class="thai-modal-qr">
+          <div class="thai-modal-bank">
+            <p>ธ.ไทยพาณิชย์</p>
+            <p>333-2590907</p>
+            <p>ใจแจ่ม วรรณพัฒน์</p>
+          </div>
+        </div>
+        <div class="thai-modal-footer">
+          <img src="images/SCBLogo.png" alt="SCB" class="thai-modal-scb">
         </div>
       </div>
     </div>
