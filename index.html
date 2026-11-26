@@ -3,46 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaijam — Welcome to the Show</title>
+  <title>Jaijam.Voice — Voice Lessons with Chan Wannapat</title>
+  <meta name="description" content="Private 60-minute voice and performance lessons with Chan Wannapat — online worldwide or onsite in Bangkok. Musical theatre, pop, jazz, funk, rock and Thai pop.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
+  <!--
+    ============================================================
+    LINKS TO SET: open script.js and fill in the LINKS object at
+    the top (Cal.com, Stripe x3, YouTube videos). Everything on
+    the page picks them up from there.
+    ============================================================
+  -->
+
   <!-- Mobile Header -->
   <header class="mobile-header" id="mobileHeader">
-    <a href="#" class="logo" id="logoHomeBtn">JAIJAM</a>
+    <a href="#" class="logo" id="logoHomeBtn">JAIJAM<span class="logo-accent">.VOICE</span></a>
     <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </header>
 
-  <!-- Mobile Menu Overlay -->
+  <!-- Menu Overlay -->
   <div class="menu-overlay" id="menuOverlay">
     <div class="menu-content">
       <div class="menu-top">
         <button class="menu-close" id="menuCloseBtn" aria-label="Close menu">&times;</button>
       </div>
       <nav class="menu-nav">
-        <a href="#program" class="menu-link" data-scroll>Program List</a>
-        <a href="#about" class="menu-link" data-scroll>About Us</a>
-        <a href="#gratitude" class="menu-link" data-scroll>Note of Gratitude</a>
+        <a href="#lessons" class="menu-link" data-scroll>Lessons</a>
+        <a href="#about" class="menu-link" data-scroll>About Chan</a>
+        <a href="#students" class="menu-link" data-scroll>Students</a>
+        <a href="#free" class="menu-link" data-scroll>Free Lesson</a>
+        <a href="#how" class="menu-link" data-scroll>How it works</a>
+        <a href="#pricing" class="menu-link" data-scroll>Pricing</a>
+        <a href="#policy" class="menu-link" data-scroll>Lesson Policy</a>
+        <a href="#faq" class="menu-link" data-scroll>FAQ</a>
       </nav>
       <div class="menu-actions">
-        <div class="menu-btn-recording menu-btn-recording--disabled">
-          <span class="menu-btn-recording-title">RECORDING OF THE SHOW</span>
-          <span class="menu-btn-recording-sub">Coming soon</span>
-        </div>
-        <a href="https://www.tickettailor.com/events/thaitheatrefoundation/2104182" target="_blank" rel="noopener" class="menu-btn-tickets">BUY OR MANAGE TICKETS</a>
-        <a href="https://account.venmo.com/u/jjwannapat" target="_blank" rel="noopener" class="menu-btn-support">
-          <span class="menu-btn-support-title">SUPPORT CHAN</span>
-          <span class="menu-btn-support-sub">WITH VENMO</span>
-        </a>
-        <button class="menu-btn-thai" id="thaiBtnMenu">
-          <span class="menu-btn-thai-title">สนับสนุนจันทร</span>
-          <span class="menu-btn-thai-sub">ธนาคาร SCB</span>
+        <a href="#" data-link="cal" target="_blank" rel="noopener" class="menu-btn-tickets">BOOK A LESSON</a>
+        <button class="menu-btn-support" data-ask>
+          <span class="menu-btn-support-title">ASK CHAN FIRST</span>
+          <span class="menu-btn-support-sub">LINE · EMAIL</span>
         </button>
       </div>
     </div>
@@ -54,319 +60,467 @@
   </button>
 
   <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-
-    <!-- Mobile Hero (<769px) -->
-    <div class="hero-mobile">
-      <img src="images/banner-mobile-new.jpg" alt="Chan Wannapat" class="hero-mobile-bg">
-      <div class="hero-mobile-top">
-        <div class="hero-mobile-title-wrap">
-          <img src="images/hero-title-desktop.png" alt="Welcome to the Show!" class="hero-mobile-title-img">
+  <section class="vhero on-dark" id="hero">
+    <div class="container vhero-inner">
+      <div class="vhero-content">
+        <h1 class="vhero-title"><span class="text-accent">Sing with</span><br>your own voice.</h1>
+        <div class="vhero-subtitle">
+          <p>Voice lessons with Chan. Perfect for professionals, musicians, actors, public speakers and kids.</p>
+          <p class="hero-sig">&mdash; Chan Wannapat, singer &middot; performer &middot; vocal coach</p>
         </div>
+        <div class="vhero-actions">
+          <a href="#" data-link="cal" target="_blank" rel="noopener" class="btn-block btn-block--accent">Book a lesson</a>
+          <a href="#free" class="btn-block btn-block--black" data-scroll-link>Try a free lesson</a>
+        </div>
+        <ul class="hero-facts t-small">
+          <li>60-minute private lessons</li>
+          <li>Taught in Thai &amp; English</li>
+          <li>10+ years coaching</li>
+        </ul>
       </div>
-      <div class="hero-mobile-bottom">
-        <p>I would like to dedicate this show to all of us: Brave travelers who&rsquo;re navigating this weird, wild thing called life.</p>
-        <p>&nbsp;</p>
-        <p>Thank you so much for being here.</p>
-        <p class="hero-sig">&mdash; With love, Chan Wannapat</p>
-      </div>
-    </div>
-
-    <!-- Tablet Hero (769–1279px) -->
-    <div class="hero-tablet">
-      <div class="hero-tablet-inner">
-        <div class="hero-tablet-content">
-          <div class="hero-tablet-title-wrap">
-            <div class="hero-title-inner">
-              <img src="images/hero-title-desktop.png" alt="Welcome to the Show!" class="hero-title-img">
-            </div>
-          </div>
-          <div class="hero-tablet-subtitle-row">
-            <div class="hero-tablet-subtitle">
-              <p>I would like to dedicate this show to all of us: Brave travelers who&rsquo;re navigating this weird, wild thing called life.</p>
-              <p>&nbsp;</p>
-              <p>Thank you so much for being here.</p>
-              <p class="hero-sig">&mdash; With love, Chan Wannapat</p>
-            </div>
-          </div>
-        </div>
-        <div class="hero-tablet-girl-wrap">
-          <img src="images/hero-girl-desktop.png" alt="Chan Wannapat" class="hero-tablet-girl-img">
-        </div>
+      <div class="vhero-photo">
+        <img src="images/hero-girl.png" alt="Chan Wannapat" class="vhero-photo-img" width="3036" height="3299" fetchpriority="high">
       </div>
     </div>
-
-    <!-- Desktop Hero (≥1280px) -->
-    <div class="hero-desktop">
-      <div class="hero-desktop-inner">
-        <div class="hero-desktop-girl">
-          <img src="images/hero-girl-desktop.png" alt="Chan Wannapat" class="hero-desktop-girl-img">
-        </div>
-        <div class="hero-desktop-content">
-          <div class="hero-desktop-title-wrap">
-            <div class="hero-title-inner">
-              <img src="images/hero-title-desktop.png" alt="Welcome to the Show!" class="hero-title-img">
-            </div>
-          </div>
-          <div class="hero-desktop-subtitle-row">
-            <div class="hero-desktop-subtitle">
-              <p>I would like to dedicate this show to all of us: Brave travelers who&rsquo;re navigating this weird, wild thing called life.</p>
-              <p>&nbsp;</p>
-              <p>Thank you so much for being here.</p>
-              <p class="hero-sig">&mdash; With love, Chan Wannapat</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </section>
 
-  <!-- ===== PROGRAM LIST ===== -->
-  <section class="program" id="program">
-    <div class="program-inner">
-      <div class="program-header">
-        <p class="section-title">Program list</p>
+  <!-- ===== LESSONS ===== -->
+  <section class="section on-dark" id="lessons" style="background:#000">
+    <div class="container grid">
+      <div class="intro-text stack-6 animate-in">
+        <h2 class="t-h2">Don&rsquo;t just sing. Perform.</h2>
+        <p class="t-lead">Take voice lessons truly tailored to your own goal &mdash; whether it&rsquo;s an audition, an event, stage performance, or being better at your next karaoke session. Lessons run online worldwide or onsite in Bangkok.</p>
+        <ul class="chips" aria-label="Styles taught">
+          <li class="chip">Musical theatre</li>
+          <li class="chip">Stage performance</li>
+          <li class="chip">Pop</li>
+          <li class="chip">Jazz</li>
+          <li class="chip">Funk</li>
+          <li class="chip">Rock</li>
+          <li class="chip">Thai pop</li>
+        </ul>
       </div>
-      <div class="program-columns">
-        <div class="program-col">
-          <div class="program-item animate-in" data-delay="0">
-            <span class="program-num">1.</span>
-            <div class="program-info">
-              <span class="program-song">Times are hard for dreamers</span>
-              <span class="program-artist">Daniel Mess&eacute; &middot; Am&eacute;lia</span>
-            </div>
+      <div class="intro-photo animate-in" data-delay="100">
+        <img src="images/lessons.jpg" alt="Chan Wannapat smiling">
+      </div>
+
+      <div class="tracks-head stack-3 animate-in">
+        <h3 class="t-h3">Everyone&rsquo;s goal is different.</h3>
+        <p class="t-lead">Let me help you get there.</p>
+      </div>
+      <div class="tracks">
+        <div class="card card--raised animate-in">
+          <div class="stack-3">
+            <p class="t-eyebrow">For a goal</p>
+            <h3 class="t-h3">Audition &amp; Event</h3>
           </div>
-          <div class="program-item animate-in" data-delay="100">
-            <span class="program-num">2.</span>
-            <div class="program-info">
-              <span class="program-song">Let Me Be Your Star</span>
-              <span class="program-artist">Marc Shaiman &amp; Scott Wittman &middot; SMASH!</span>
-            </div>
-          </div>
-          <div class="program-item animate-in" data-delay="200">
-            <span class="program-num">3.</span>
-            <div class="program-info">
-              <span class="program-song">Something in the water</span>
-              <span class="program-artist">Clyde &amp; Gracie Lawrence &middot; Lawrence the Band</span>
-            </div>
-          </div>
-          <div class="program-item animate-in" data-delay="300">
-            <span class="program-num">4.</span>
-            <div class="program-info">
-              <span class="program-song">All of You</span>
-              <span class="program-artist">Lin-Manuel Miranda &middot; Encanto</span>
-            </div>
-          </div>
-          <div class="program-item animate-in" data-delay="400">
-            <span class="program-num">5.</span>
-            <div class="program-info">
-              <span class="program-song">Waiting on a wish</span>
-              <span class="program-artist">Benj Pasek &amp; Justin Paul &middot; Snow White (Film)</span>
-            </div>
-          </div>
-          <div class="program-item animate-in" data-delay="500">
-            <span class="program-num">6.</span>
-            <div class="program-info">
-              <span class="program-song">30/90</span>
-              <span class="program-artist">Jonathan Larson &middot; Tick Tick Boom!</span>
-            </div>
-          </div>
+          <p class="t-body">Song choice, technique, staging and confidence for the day that matters.</p>
         </div>
-        <div class="program-col">
-          <div class="program-item animate-in" data-delay="50">
-            <span class="program-num">7.</span>
-            <div class="program-info">
-              <span class="program-song">Roadless traveled</span>
-              <span class="program-artist">Fatai Veamatahau &middot; Fatai</span>
-            </div>
+        <div class="card card--raised animate-in" data-delay="100">
+          <div class="stack-3">
+            <p class="t-eyebrow">For artists</p>
+            <h3 class="t-h3">Find Your Sound</h3>
           </div>
-          <div class="program-item animate-in" data-delay="150">
-            <span class="program-num">8.</span>
-            <div class="program-info">
-              <span class="program-song">Corner of The Sky</span>
-              <span class="program-artist">Stephen Schwartz &middot; Pippin</span>
-            </div>
+          <p class="t-body">Style, tone and stage presence for a sound that&rsquo;s truly your own.</p>
+        </div>
+        <div class="card card--raised animate-in" data-delay="200">
+          <div class="stack-3">
+            <p class="t-eyebrow">For everyone</p>
+            <h3 class="t-h3">Singing from Scratch</h3>
           </div>
-          <div class="program-item animate-in" data-delay="250">
-            <span class="program-num">9.</span>
-            <div class="program-info">
-              <span class="program-song">My Days</span>
-              <span class="program-artist">Ingrid Michaelson &middot; The Notebook</span>
-            </div>
-          </div>
-          <div class="program-item animate-in" data-delay="350">
-            <span class="program-num">10.</span>
-            <div class="program-info">
-              <span class="program-song">Masterpiece</span>
-              <span class="program-artist">Josh Alexander, Britt Burton &amp; Emily Warren &middot; Jessi J</span>
-            </div>
-          </div>
-          <div class="program-item animate-in" data-delay="450">
-            <span class="program-num">11.</span>
-            <div class="program-info">
-              <span class="program-song">Blackbird</span>
-              <span class="program-artist">Paul McCartney &amp; John Lennon &middot; The Beatles</span>
-            </div>
-          </div>
+          <p class="t-body">Breath, pitch and healthy technique for confident singing, for adults and kids.</p>
+        </div>
+      </div>
+
+      <!-- "How I teach" video — set LINKS.videoHowITeach in script.js -->
+      <div class="video-block animate-in">
+        <div class="video-text stack-4">
+          <p class="t-eyebrow">Meet your coach</p>
+          <h3 class="t-h3">A minute with Chan</h3>
+          <p class="t-body">Chan explains how lessons work and what you&rsquo;ll get out of them &mdash; the best way to know if it&rsquo;s a fit before you book.</p>
+          <a href="https://youtu.be/wZBU6qVzWrk" target="_blank" rel="noopener" class="btn-text">Watch on YouTube <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="video-frame" data-youtube="videoHowITeach" data-title="How Chan teaches">
+          <p class="video-placeholder t-small">Video coming soon</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ABOUT US ===== -->
-  <section class="about" id="about">
-    <p class="about-title animate-in">About us</p>
-    <div class="about-cards">
-
-      <div class="about-card">
-        <div class="about-card-img">
-          <img src="images/about-chan.jpg" alt="Chan Wannapat">
-        </div>
-        <div class="about-card-body">
-          <div class="about-card-text">
-            <h3 class="about-card-name">Chan Wannapat</h3>
-            <p class="about-card-desc">A Thai singer, performer, and vocal coach based in New York City, Chan holds a Fulbright-sponsored MM in Musical Theatre Vocal Performance and is the voice of Mirabel in Disney&rsquo;s Encanto Thailand.</p>
-          </div>
-          <div class="about-card-actions">
-            <button class="btn-read-more" data-person="chan">Read more</button>
-            <a href="https://www.instagram.com/chan_wannapat" target="_blank" rel="noopener" class="btn-instagram">See on Instagram <span class="btn-arrow">&rarr;</span></a>
-          </div>
-        </div>
+  <!-- ===== ABOUT ===== -->
+  <section class="section vabout on-light" id="about">
+    <div class="container grid">
+      <div class="about-photo animate-in">
+        <img src="images/about.jpg" alt="Chan Wannapat">
       </div>
-
-      <div class="about-card">
-        <div class="about-card-img">
-          <img src="images/about-angela.jpg" alt="Angela Dixon">
-        </div>
-        <div class="about-card-body">
-          <div class="about-card-text">
-            <h3 class="about-card-name">Angela Dixon</h3>
-            <p class="about-card-desc">A multi-instrumentalist, singer, and theater artist based in NYC, Angela brings percussion to the stage tonight alongside credits ranging from the National Archives to teaching music in the Bronx.</p>
-          </div>
-          <div class="about-card-actions">
-            <button class="btn-read-more" data-person="angela">Read more</button>
-            <a href="https://www.instagram.com/angeladixonmusic" target="_blank" rel="noopener" class="btn-instagram">See on Instagram <span class="btn-arrow">&rarr;</span></a>
+      <div class="about-text stack-8 animate-in" data-delay="100">
+        <div class="stack-4">
+          
+          <div>
+            <h2 class="t-h2">Chan Wannapat</h2>
+            <p class="about-thai">ใจแจ่ม วรรณพัฒน์</p>
           </div>
         </div>
-      </div>
-
-      <div class="about-card">
-        <div class="about-card-img">
-          <img src="images/about-eli.jpg" alt="Eli Weary">
+        <div class="stack-4">
+          <p class="t-lead">Not just hitting the notes &mdash; truly performing.</p>
+          <p class="t-body">A singer, performer and vocal coach from Thailand, with a home ground in musical theatre and stage performance. For more than 10 years, Chan has helped artists and music lovers find their own voice.</p>
         </div>
-        <div class="about-card-body">
-          <div class="about-card-text">
-            <h3 class="about-card-name">Eli Weary</h3>
-            <p class="about-card-desc">An actor and instrumentalist based in NYC, Eli brings remarkable versatility to his craft as a cellist, guitarist, bassist, and conductor across regional theatre productions.</p>
-          </div>
-          <div class="about-card-actions">
-            <button class="btn-read-more" data-person="eli">Read more</button>
-            <a href="https://www.instagram.com/ez_weary/" target="_blank" rel="noopener" class="btn-instagram">See on Instagram <span class="btn-arrow">&rarr;</span></a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- ===== TTF FOUNDATION SECTION ===== -->
-  <section class="ttf-section">
-    <div class="ttf-main animate-in">
-      <div class="ttf-header">
-        <div class="ttf-header-text">
-          <p class="ttf-presented-by">Presented by</p>
-          <p class="ttf-title">Thai Theatre Foundation</p>
-        </div>
-        <div class="ttf-logo-wrap">
-          <img src="images/ttf-logo.png" alt="Thai Theatre Foundation" class="ttf-logo">
-        </div>
-      </div>
-      <div class="ttf-note">
-        <p>Foundation exists to support and strengthen contemporary Thai theater and theater makers and to foster collaboration between Thai and US theater artists. We welcome artists and audiences across lines of identity, background, and experience. We believe cultural representation must come with fair access to space, support, and compensation. We uplift Thai and Thai-American theater makers not only through visibility but also through care, resources, and collaboration. We tell Thai and Thai-American stories not just to be heard but to open space, build relationships, and honor the people behind the work.</p>
-        <p>&nbsp;</p>
-        <p>For more information, visit <a href="http://www.thaitheatre.org" target="_blank" rel="noopener">www.thaitheatre.org</a></p>
-      </div>
-    </div>
-    <div class="ttf-staff-wrap animate-in" data-delay="100">
-      <div class="ttf-staff-inner">
-        <p class="ttf-staff-title">Thai Theatre Foundation US Staff</p>
-        <div class="ttf-staff-list">
-          <div class="ttf-staff-item">
-            <span class="ttf-staff-role">Executive Director</span>
-            <span class="ttf-staff-name">Keng S. Meateanuwat</span>
-          </div>
-          <div class="ttf-staff-item">
-            <span class="ttf-staff-role">Project&rsquo;s Producer</span>
-            <span class="ttf-staff-name">Pattida Panyakaew</span>
-          </div>
-          <div class="ttf-staff-item">
-            <span class="ttf-staff-role">Development Team</span>
-            <span class="ttf-staff-name">Panita Charoenphinyochai &amp; Zen Tunsaingkarn</span>
-          </div>
-          <div class="ttf-staff-item">
-            <span class="ttf-staff-role">Marketing and Communication Team</span>
-            <span class="ttf-staff-name">Jaijam Wannapat &amp; Pattida Panyakaew</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ttf-sponsors animate-in" data-delay="200">
-      <p class="ttf-sponsors-label">Supported by</p>
-      <div class="ttf-sponsors-row">
-        <div class="ttf-sponsors-track">
-          <div class="sponsor-cell"><img src="logos/Logo-01.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-02.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-03.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-04.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-05.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-06.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-07.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-08.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-01.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-02.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-03.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-04.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-05.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-06.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-07.png" alt="Sponsor"></div>
-          <div class="sponsor-cell"><img src="logos/Logo-08.png" alt="Sponsor"></div>
+        <ul class="creds">
+          <li><span class="t-h4">Fulbright scholar</span><span class="t-small">MM, Musical Theatre Vocal Performance, Arizona State University · First Class Honors, Mahidol University</span></li>
+          <li><span class="t-h4">Voice of Mirabel</span><span class="t-small">Disney&rsquo;s <em>Encanto</em>, Thai version</span></li>
+          <li><span class="t-h4">10+ years coaching</span><span class="t-small">Kids, adults, performers and artists</span></li>
+        </ul>
+        <div class="about-actions">
+          <a href="https://www.instagram.com/chan_wannapat" target="_blank" rel="noopener" class="btn-block btn-block--black">See on Instagram &rarr;</a>
+          <button class="btn-text" data-person="chan">Read full bio</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== NOTE OF GRATITUDE ===== -->
-  <section class="gratitude" id="gratitude">
-    <div class="gratitude-inner">
-      <div class="gratitude-note">
-        <h2 class="gratitude-title animate-in">Note of Gratitude</h2>
-        <div class="gratitude-text animate-in" data-delay="100">
-          <p>I would like to give a big thank you to the Thai Theatre Foundation for all your support&mdash;you&rsquo;re truly uplifting the Thai artist community in such a powerful way. Pattida Panyakaew, my producer, thank you for holding this whole thing together. Eli Weary and Angela Dixon&mdash;thank you for sharing your love of music and your incredible talents with this show.</p>
-          <p>&nbsp;</p>
-          <p>Thank you P&rsquo;Keng, Karel, Proud, Kimberly, P&rsquo;Pam, P&rsquo;Ezra, P&rsquo;Warut, P&rsquo;Plum, Sivan, mom, my family, and my people&mdash;thank you for always being there for me, and pushing me to my best. I&rsquo;m so lucky to be surrounded by your love.</p>
-          <p>&nbsp;</p>
-          <p>And lastly, thank you to you for being here. I&rsquo;m truly grateful for your support, kindness and love.</p>
+  <!-- ===== STUDENTS ===== -->
+  <section class="section on-dark" id="students" style="background:#000">
+    <div class="container stack-12">
+      <div class="quotes-head animate-in">
+        <div class="stack-4">
+          <p class="t-eyebrow">Students &amp; parents</p>
+          <h2 class="t-h2">Heard from the students.</h2>
         </div>
       </div>
-      <div class="donation-box animate-in" data-delay="200">
-        <div class="donation-text">
-          <p>As I continue on my journey, I&rsquo;d also deeply appreciate any donations. It all goes toward fueling my art, my dreams, and yes&mdash;very real things like immigration fees. Every bit of support helps me keep going. Thank you for being part of this journey.&rdquo;</p>
-          <p>&nbsp;</p>
-          <p>&mdash; With love, Chan Wannapat</p>
-        </div>
-        <a href="https://account.venmo.com/u/jjwannapat" target="_blank" rel="noopener" class="btn-support">Support Me</a>
+      <div class="quote-grid">
+        <figure class="card card--raised quote-card quote-card--wide animate-in">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Chan&rsquo;s natural empathy made me feel open to singing my fullest &mdash; connecting my vocal technique with my emotional vulnerability while performing. She helped me connect my training as a wind and guitar player more than any vocal coach I&rsquo;ve worked with.</blockquote>
+          <figcaption class="stack-1"><p class="t-h4">Kevin</p><p class="t-small">Professional artist &amp; music teacher</p></figcaption>
+        </figure>
+        <figure class="card card--raised quote-card animate-in" data-delay="100">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Singing was something I&rsquo;d always wanted to try but was too scared to. Within just three months, I was hitting notes I didn&rsquo;t even know I was capable of reaching. 100% DIVA!</blockquote>
+          <figcaption class="stack-1"><p class="t-h4">Dollar</p><p class="t-small">New York movie director</p></figcaption>
+        </figure>
+        <figure class="card card--raised quote-card animate-in">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>I genuinely never thought I&rsquo;d be able to sing higher than my usual &ldquo;man voice&rdquo; &mdash; it boosted my overall confidence. You are the BEST.</blockquote>
+          <figcaption class="stack-1"><p class="t-h4">Leti</p><p class="t-small">Consultant &amp; music lover</p></figcaption>
+        </figure>
+        <figure class="card card--raised quote-card quote-card--wide animate-in" data-delay="100">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>I started taking lessons just to feel more confident singing karaoke, but I&rsquo;ve gotten so much more &mdash; confidence, trust in my body, and a voice I didn&rsquo;t know I had.</blockquote>
+          <figcaption class="stack-1"><p class="t-h4">Wawa</p><p class="t-small">Business manager &amp; YouTuber</p></figcaption>
+        </figure>
+        <figure class="card card--raised quote-card quote-card--half animate-in">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>What impresses me most is the energy and passion Kru Chan brings to every class &mdash; even online, she pays attention to every detail of technique, gesture and expression. Seeing her perform for real has made her a true role model for my daughter.</blockquote>
+          <figcaption class="stack-1"><p class="t-h4">Iri&rsquo;s mom</p><p class="t-small">Online student from age 7</p></figcaption>
+        </figure>
+        <figure class="card card--raised quote-card quote-card--half animate-in" data-delay="100">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>Kru Chan has great technique and really gets kids doing it. Lessons are fun, with a wonderful attitude and mindset.</blockquote>
+          <figcaption class="stack-1"><p class="t-h4">Jeana&rsquo;s mom</p><p class="t-small">Studying with Chan since 2022, from age 8</p></figcaption>
+        </figure>
       </div>
     </div>
-    <p class="footer-credit"><a href="https://www.linkedin.com/in/karelfyrbach/" target="_blank" rel="noopener">Website design by: Karel Fyrbach</a></p>
   </section>
 
-  <!-- ===== MODAL ===== -->
+  <!-- ===== FREE LESSON (YouTube) ===== -->
+  <section class="section on-light free" id="free">
+    <div class="container">
+      <div class="video-block">
+        <div class="video-text stack-6 animate-in">
+          <p class="t-eyebrow">Free lesson</p>
+          <h2 class="t-h2">Your first lesson is free.</h2>
+          <p class="t-lead">Warm up and sing along with Chan &mdash; hear how she sounds, see how she teaches, and try it at your own pace. No sign-up needed.</p>
+          <div class="free-actions">
+            <a href="#" data-link="cal" target="_blank" rel="noopener" class="btn-block btn-block--black">Book a 1-on-1 lesson</a>
+            <a href="https://youtu.be/BOwIiu0vIio" data-yt-channel target="_blank" rel="noopener" class="btn-text">More free lessons on YouTube <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="video-frame animate-in" data-delay="100" data-youtube="videoFreeLesson" data-title="Free voice lesson with Chan">
+          <p class="video-placeholder t-small">Free lesson video</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section on-dark" id="how" style="background:#000; padding-top:0">
+    <div class="container grid">
+      <div class="intro-text stack-6 animate-in">
+        <p class="t-eyebrow">How it works</p>
+        <h2 class="t-h2">Three steps to your first lesson.</h2>
+        <p class="t-lead">Choosing is the hardest part. After that, it&rsquo;s just you, a mic and a lot of fun.</p>
+        <p class="t-body">Have questions first? <button class="link-btn" data-ask>Message Chan on LINE</button>.</p>
+      </div>
+      <div class="intro-photo animate-in" data-delay="100">
+        <img src="images/laugh.jpg" alt="Chan Wannapat laughing">
+      </div>
+
+      <ol class="steps">
+        <li class="stack-4 animate-in">
+          <span class="step-num">1</span>
+          <div class="stack-2"><p class="t-h4">Pick a plan</p><p class="t-body">Choose 1, 8 or 20 lessons that fit your goal.</p><p class="t-body">Living in Thailand? <a href="https://line.me/ti/p/~iamlittlemoon" target="_blank" rel="noopener">Message Chan</a> for local rates.</p></div>
+        </li>
+        <li class="stack-4 animate-in" data-delay="100">
+          <span class="step-num">2</span>
+          <div class="stack-2"><p class="t-h4">Email Chan</p><p class="t-body">Tap &ldquo;Book a lesson&rdquo; to email Chan your plan, goal, favourite songs or styles, and times that work for you. She&rsquo;ll reply to confirm your time and payment.</p></div>
+        </li>
+        <li class="stack-4 animate-in" data-delay="200">
+          <span class="step-num">3</span>
+          <div class="stack-2"><p class="t-h4">Show up &amp; sing</p><p class="t-body">Your Zoom link arrives with your confirmation. Package students also get their personal Google Doc.</p></div>
+        </li>
+      </ol>
+
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section pricing on-light" id="pricing">
+    <div class="container grid">
+      <div class="pricing-head animate-in">
+        <div class="stack-6">
+          <p class="t-eyebrow">Pricing</p>
+          <h2 class="t-h2">Pick your plan.</h2>
+        </div>
+        <p class="t-body pricing-sub">All lessons are 60 minutes, one-on-one, in Thai or English. Prices in US dollars for online lessons.</p>
+      </div>
+
+      <div class="price-cards">
+        <!-- 1 Timer -->
+        <div class="card card--paper price-card animate-in">
+          <div class="stack-3">
+            <p class="t-eyebrow">The solo</p>
+            <h3 class="t-h3">1 Timer</h3>
+            <p class="t-body">Perfect for a personal audition or an event upgrade.</p>
+          </div>
+          <div class="price-rows">
+            <div class="price-row"><span class="t-body price-row-label">Online</span><span class="price-row-value">$70</span></div>
+          </div>
+          <ul class="price-list t-body">
+            <li>Lessons built around your personal goal</li>
+            <li class="is-off">Practice materials tailored to you</li>
+            <li class="is-off">Lesson tracking</li>
+          </ul>
+          <a href="#" data-link="stripe1" target="_blank" rel="noopener" class="btn-block btn-block--black btn-block--full">Buy 1 lesson</a>
+        </div>
+
+        <!-- 8 Lessons -->
+        <div class="card card--paper price-card animate-in" data-delay="100">
+          <div class="stack-3">
+            <p class="t-eyebrow">The encore</p>
+            <h3 class="t-h3">8 Lessons</h3>
+            <p class="t-body">Weekly lessons · valid 12 weeks</p>
+          </div>
+          <div class="price-rows">
+            <div class="price-row"><span class="t-body price-row-label">Online</span><span class="price-row-value">$520<small>$65 / lesson</small></span></div>
+          </div>
+          <ul class="price-list t-body">
+            <li>Lessons built around your personal goal</li>
+            <li>Practice materials tailored to you</li>
+            <li>Lesson tracking</li>
+            <li>At least 3 songs learnt</li>
+          </ul>
+          <a href="#" data-link="stripe8" target="_blank" rel="noopener" class="btn-block btn-block--black btn-block--full">Buy 8 lessons</a>
+        </div>
+
+        <!-- 20 Lessons (featured) -->
+        <div class="card card--black price-card price-card--featured on-dark animate-in" data-delay="200">
+          <p class="price-card-badge">Best value</p>
+          <div class="stack-3">
+            <p class="t-eyebrow">The Golden Buzzer</p>
+            <h3 class="t-h3">20 Lessons</h3>
+            <p class="t-body">Weekly lessons · valid 24 weeks</p>
+          </div>
+          <div class="price-rows">
+            <div class="price-row"><span class="t-body price-row-label">Online</span><span class="price-row-value">$1,200<small>$60 / lesson</small></span></div>
+          </div>
+          <ul class="price-list t-body">
+            <li>Lessons built around your personal goal</li>
+            <li>Practice materials tailored to you</li>
+            <li>Lesson tracking</li>
+            <li>At least 10 songs learnt</li>
+          </ul>
+          <a href="#" data-link="stripe20" target="_blank" rel="noopener" class="btn-block btn-block--accent btn-block--full">Buy 20 lessons</a>
+        </div>
+      </div>
+
+      <!-- Thailand note -->
+      <div class="local-note animate-in">
+        <div class="stack-1">
+          <p class="t-h4">Based in Thailand?</p>
+          <p class="t-body">Local rates and Thai bank transfer are available for online and onsite lessons in Bangkok (limited availability).</p>
+        </div>
+        <a href="https://line.me/ti/p/~iamlittlemoon" target="_blank" rel="noopener" class="btn-block btn-block--black">Message Chan on LINE</a>
+      </div>
+
+      <!-- Lesson tracking explained -->
+      <div class="tracking animate-in">
+        <div class="stack-4 tracking-text">
+          <p class="t-eyebrow">What &ldquo;lesson tracking&rdquo; means</p>
+          <h3 class="t-h3">Your own live Google Doc.</h3>
+          <p class="t-body">Every package student gets a personal, shared Google Doc &mdash; one place for everything, so you never have to go looking when it&rsquo;s time to practise.</p>
+        </div>
+        <ul class="tracking-list t-body">
+          <li><span class="t-h4">Lessons left</span>Always know where you are in your package.</li>
+          <li><span class="t-h4">Progress &amp; notes</span>What we worked on, and what&rsquo;s next.</li>
+          <li><span class="t-h4">Homework</span>Clear practice tasks between lessons.</li>
+          <li><span class="t-h4">Tracks &amp; recordings</span>Personal practice tracks and lesson recordings, when applicable.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POLICY ===== -->
+  <section class="section on-dark" id="policy" style="background:#000">
+    <div class="container grid">
+      <div class="policy-head stack-6 animate-in">
+        <p class="t-eyebrow">The fine print</p>
+        <h2 class="t-h2">Lesson policy</h2>
+        <p class="t-body">Flexible when life happens &mdash; with clear limits, so every lesson time is respected.</p>
+      </div>
+      <div class="policy-list">
+        <div class="policy-item animate-in">
+          <span class="policy-key">24 hr</span>
+          <div class="stack-2"><p class="t-h4">Cancelling &amp; rescheduling</p><p class="t-body">Cancel at least 24 hours ahead and we&rsquo;ll find a makeup lesson. Later cancellations and no-shows count as used &mdash; real emergencies are handled case by case.</p></div>
+        </div>
+        <div class="policy-item animate-in" data-delay="100">
+          <span class="policy-key">12 / 24 wk</span>
+          <div class="stack-2"><p class="t-h4">Package validity</p><p class="t-body">8 lessons are valid for 12 weeks, 20 lessons for 24 weeks. Each package can be extended once on request &mdash; +2 weeks or +4 weeks &mdash; for illness or travel.</p></div>
+        </div>
+        <div class="policy-item animate-in" data-delay="200">
+          <span class="policy-key">Always</span>
+          <div class="stack-2"><p class="t-h4">If Chan cancels</p><p class="t-body">You always get a makeup lesson, and it can be scheduled on any date &mdash; even after your package ends.</p></div>
+        </div>
+        <div class="policy-item animate-in" data-delay="300">
+          <span class="policy-key">Separate</span>
+          <div class="stack-2"><p class="t-h4">Online &amp; onsite</p><p class="t-body">Online and onsite are separate packages. You can hold one of each and use whichever you need.</p></div>
+        </div>
+        <div class="policy-item animate-in" data-delay="400">
+          <span class="policy-key">Upfront</span>
+          <div class="stack-2"><p class="t-h4">Payment &amp; refunds</p><p class="t-body">Packages are paid before the first lesson; single lessons at booking. Unused lessons expire with the package and are non-refundable.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section on-light faq" id="faq">
+    <div class="container grid">
+      <div class="faq-head stack-6 animate-in">
+        <p class="t-eyebrow">FAQ</p>
+        <h2 class="t-h2">Questions I often get.</h2>
+        <p class="t-body">Can&rsquo;t find yours? <button class="link-btn" data-ask>Ask Chan directly</button>.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="t-h4">Do you offer a free trial?</summary>
+          <p class="t-body">Yes &mdash; your first lesson is free on YouTube. Warm up with Chan anytime, then book a 1-on-1 when you&rsquo;re ready. <a href="#free" data-scroll-link>Watch the free lesson</a>.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="t-h4">How long is a lesson?</summary>
+          <p class="t-body">Every lesson is 60 minutes, one-on-one with Chan, in Thai or English.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="t-h4">I&rsquo;ve never sung before. Is that okay?</summary>
+          <p class="t-body">Absolutely. Many students start from scratch &mdash; lessons are built around where you are now and where you want to go.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="t-h4">Which language are lessons in?</summary>
+          <p class="t-body">Thai or English &mdash; whichever you&rsquo;re most comfortable with.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="t-h4">Which styles do you teach?</summary>
+          <p class="t-body">Musical theatre and stage performance are Chan&rsquo;s specialities. She also teaches pop, jazz, funk, rock and Thai pop.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="t-h4">Do you teach kids?</summary>
+          <p class="t-body">Yes &mdash; online from age 7, and onsite in Bangkok at any age.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="t-h4">What do I need for online lessons?</summary>
+          <div class="faq-answer stack-4">
+            <p class="t-body">A laptop is ideal, but an iPad or phone also works. Before your first online lesson:</p>
+            <ul class="price-list t-body">
+              <li>Download the Zoom app (not the browser version) so you can adjust the sound</li>
+              <li>Switch Zoom to musician-quality sound &mdash; Chan&rsquo;s short video shows you how</li>
+              <li>Find a private space where you can sing at full voice without distractions</li>
+              <li>Bonus: room to stand and move around a little</li>
+            </ul>
+            <div class="video-frame" data-youtube="videoZoomSetup" data-title="How to set up Zoom sound for music lessons">
+              <p class="video-placeholder t-small">Zoom sound setup video</p>
+            </div>
+          </div>
+        </details>
+        <details class="faq-item faq-extra">
+          <summary class="t-h4">Where are onsite lessons?</summary>
+          <p class="t-body">At Chan&rsquo;s studio in Bangkok, with limited availability. The exact location is shared after you book.</p>
+        </details>
+        <details class="faq-item faq-extra">
+          <summary class="t-h4">I&rsquo;m in Thailand. How do prices and payment work?</summary>
+          <p class="t-body">Local rates are available, paid by Thai bank transfer. <a href="https://line.me/ti/p/~iamlittlemoon" target="_blank" rel="noopener">Message Chan on LINE</a> to get them.</p>
+        </details>
+        <details class="faq-item faq-extra">
+          <summary class="t-h4">What if I miss a lesson or my package runs out?</summary>
+          <p class="t-body">Cancel 24 hours ahead and you&rsquo;ll get a makeup lesson. Each package can be extended once (+2 or +4 weeks). Unused lessons expire with the package and aren&rsquo;t refundable &mdash; see the lesson policy above.</p>
+        </details>
+        <details class="faq-item faq-extra">
+          <summary class="t-h4">Do you offer group lessons or audition and recital prep?</summary>
+          <p class="t-body">Possibly &mdash; these are arranged one by one. <button class="link-btn" data-ask>Contact Chan</button> with what you have in mind.</p>
+        </details>
+        <details class="faq-item faq-extra">
+          <summary class="t-h4">Can I talk to Chan before booking?</summary>
+          <p class="t-body">Of course &mdash; text her on LINE (<strong>iamlittlemoon</strong>) with any questions before you book.</p>
+        </details>
+        <button class="faq-more" id="faqMore" aria-expanded="false">More questions <span aria-hidden="true">+</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section on-dark final-cta" style="background:#000">
+    <div class="container final-cta-inner animate-in">
+      <h2 class="t-h2">Let&rsquo;s start your vocal journey today.</h2>
+      <div class="vhero-actions">
+        <a href="#" data-link="cal" target="_blank" rel="noopener" class="btn-block btn-block--accent">Book a lesson</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="vfooter on-dark" style="background:#000">
+    <div class="container vfooter-inner">
+      <p class="vfooter-logo">JAIJAM<span class="logo-accent">.VOICE</span></p>
+      <p class="t-small">Voice &amp; performance lessons with Chan Wannapat · Online worldwide · Onsite in Bangkok</p>
+    </div>
+  </footer>
+
+  <!-- ===== ASK CHAN (LINE / Email) ===== -->
+  <div class="ask-backdrop" id="askBackdrop"></div>
+  <div class="ask-panel on-light" id="askPanel" role="dialog" aria-modal="true" aria-labelledby="askTitle" aria-hidden="true">
+    <button class="modal-close ask-close" id="askCloseBtn" aria-label="Close">&times;</button>
+    <div class="stack-3">
+      <p class="t-eyebrow">Have questions?</p>
+      <h3 class="t-h3" id="askTitle">Ask Chan first</h3>
+      <p class="t-body">Questions about lessons, your goals, or local rates in Thailand? Text Chan on LINE or send an email.</p>
+    </div>
+    <div class="ask-options">
+      <a href="https://line.me/ti/p/~iamlittlemoon" target="_blank" rel="noopener" class="ask-option">
+        <span class="t-h4">LINE</span>
+        <span class="t-body">iamlittlemoon</span>
+        <span class="ask-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+      <a href="mailto:jjwannapat@gmail.com?subject=Voice%20lessons%20%E2%80%94%20question" class="ask-option">
+        <span class="t-h4">Email</span>
+        <span class="t-body">jjwannapat@gmail.com</span>
+        <span class="ask-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+    <p class="t-small">Tip: share your goal, the songs or styles you love, and whether you&rsquo;d like online or onsite lessons.</p>
+  </div>
+
+  <!-- ===== MODAL (Read more) ===== -->
   <div class="modal-backdrop" id="modalBackdrop"></div>
   <div class="modal" id="modal">
     <div class="modal-inner">
-      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close">&times;</button>
       <div class="modal-body">
         <div class="modal-img">
           <img src="" alt="" id="modalImg">
@@ -386,29 +540,6 @@
     </div>
   </div>
 
-  <!-- Thai Support Popup -->
-  <div class="modal-backdrop" id="thaiModalBackdrop"></div>
-  <div class="modal thai-modal" id="thaiModal">
-    <div class="modal-inner thai-modal-inner">
-      <button class="modal-close" id="thaiModalCloseBtn">&times;</button>
-      <div class="thai-modal-body">
-        <div class="thai-modal-content">
-          <h3 class="thai-modal-title">ขอบคุณสำหรับ<br>การสนับสนุน</h3>
-          <p class="thai-modal-sub">สแกน QR Code จากแอปธนาคารของคุณ</p>
-          <img src="images/QRCode.png" alt="QR Code" class="thai-modal-qr">
-          <div class="thai-modal-bank">
-            <p>ธ.ไทยพาณิชย์</p>
-            <p>333-2590907</p>
-            <p>ใจแจ่ม วรรณพัฒน์</p>
-          </div>
-        </div>
-        <div class="thai-modal-footer">
-          <img src="images/SCBLogo.png" alt="SCB" class="thai-modal-scb">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
