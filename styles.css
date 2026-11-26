@@ -1805,19 +1805,11 @@ body.ask-open { overflow: hidden; }
 .faq-list.is-open .faq-more { display: none; }
 
 /* ===== Hero photo: full-quality PNG, soft shadow =====
-   The portrait has a soft shadow painted around it. Where the photo box
-   ends in the middle of the page, the shadow is faded out so it never
-   stops in a hard line. (Phone and desktop: the right side runs off the
-   screen edge, so only the left side needs the fade.) */
-@media (min-width: 440px) {
-  .vhero-photo {
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 85%, transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0, #000 7%, #000 85%, transparent 100%);
-  }
-}
-@media (min-width: 1280px) {
-  .vhero-photo {
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 7%);
-    mask-image: linear-gradient(to right, transparent 0, #000 7%);
-  }
+   The portrait has a soft shadow painted around it. The photo box only
+   crops the top and bottom; left and right the shadow is allowed to run
+   past the box and fade out by itself, so it never stops in a hard line. */
+.vhero-photo {
+  overflow: visible;
+  clip-path: inset(0 -100vw 0 -100vw);
+  -webkit-mask-image: none; mask-image: none;
 }
